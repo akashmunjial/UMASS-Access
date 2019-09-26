@@ -13,9 +13,62 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    let owlMeta = "https://owl.oit.umass.edu/owl-c/register/owllogin.cgi?UserType=Student&Server=owl-"
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let viewController = ViewController()
+        window!.rootViewController = viewController
+        window!.makeKeyAndVisible()
+        if UserDefaults.standard.object(forKey: "OwlOptions") == nil {
+            UserDefaults.standard.set(["Accounting and Information Systems": owlMeta+"isenbergschoolofmanagement",
+                                       "Art History": owlMeta+"arthistory",
+                                       "Astronomy": owlMeta+"astronomy",
+                                       "Biochemistry And Molecular Biology": owlMeta+"biochemistry",
+                                       "Biology": owlMeta+"biology",
+                                       "Chemistry General": owlMeta+"chemistry",
+                                       "Chemistry Organic": owlMeta+"organicchemistry",
+                                       "Chemistry Upper Level": owlMeta+"chemistryupperlevel",
+                                       "Classics": owlMeta+"classics",
+                                       "Computer Science": owlMeta+"compsci",
+                                       "Economics": owlMeta+"economics",
+                                       "Education": owlMeta+"education",
+                                       "Electrical and COnputer Engineering": owlMeta+"eleccompeng",
+                                       "Entomology": owlMeta+"entomology",
+                                       "Extension": owlMeta+"extension",
+                                       "Finance": owlMeta+"isomfinance",
+                                       "Foreign Language": owlMeta+"foreignlang",
+                                       "Hospitality and Tourism Management": owlMeta+"hospitalitytourismmanagement",
+                                       "Information Technology Program": owlMeta+"infotechprog",
+                                       "Journalism": owlMeta+"journalism",
+                                       "Mathematics": owlMeta+"mathematics",
+                                       "Music and Dance": owlMeta+"musicanddance",
+                                       "Nutrition": owlMeta+"nutrition",
+                                       "Physics": owlMeta+"physics",
+                                       "Resource Economics": owlMeta+"resourceeconomics",
+                                       "Theater": owlMeta+"theater",
+                                       "Center for Educational Assessment": owlMeta+"ctredassess",
+                                       "UMass Amherst iExams": owlMeta+"iexams",
+                                       "UMass Amherst Placement Exams": owlMeta+"mathplacement",
+                                       "UMass Amherst Online Course Surveys (SRTI)": owlMeta+"umacontedonlinecourseeval",
+                                       "UMass Amherst Senior Surveys": owlMeta+"umassamherstseniorsurvey",
+                                       "Massachusetts Association of Conservation Commissions": owlMeta+"macc",
+                                       "Amherst College Astronomy": owlMeta+"amherstcollegeastro",
+                                       "Holyoke Community College Engineering": owlMeta+"hcceng",
+                                       "UMass Boston General Chemistry": owlMeta+"umborgchem",
+                                       "UMass Boston Organic Chemistry": owlMeta+"umborgchem",
+                                       "UNCG Physics Department": owlMeta+"uncgphysics",
+                                       "Center for Educational Software Development": owlMeta+"cesdmanager",
+                                       "CI-Team": owlMeta+"citeam",
+                                       "Sandbox": owlMeta+"geography",
+                                       "Standard": owlMeta+"standard",
+                                       "UMass Online Testing": owlMeta+"umoltest",
+                                       "OWL Examples from Various Departments": owlMeta+"demo",
+                                       "Training Demo": owlMeta+"trainingdemo"], forKey: "OwlOptions")
+        }
+        
+        
         return true
     }
 

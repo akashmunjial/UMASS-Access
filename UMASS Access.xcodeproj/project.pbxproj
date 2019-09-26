@@ -9,10 +9,16 @@
 /* Begin PBXBuildFile section */
 		C030A06522BBFF72005B6995 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C030A06422BBFF72005B6995 /* AppDelegate.swift */; };
 		C030A06722BBFF72005B6995 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C030A06622BBFF72005B6995 /* ViewController.swift */; };
-		C030A06A22BBFF72005B6995 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C030A06822BBFF72005B6995 /* Main.storyboard */; };
 		C030A06C22BBFF75005B6995 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C030A06B22BBFF75005B6995 /* Assets.xcassets */; };
 		C030A06F22BBFF75005B6995 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C030A06D22BBFF75005B6995 /* LaunchScreen.storyboard */; };
 		C030A07A22BBFF75005B6995 /* UMASS_AccessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C030A07922BBFF75005B6995 /* UMASS_AccessTests.swift */; };
+		C030A08522BC185F005B6995 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C030A08422BC185F005B6995 /* LogoutViewController.swift */; };
+		C030A08722BC18D8005B6995 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C030A08622BC18D8005B6995 /* AddViewController.swift */; };
+		C030A08922BC29E8005B6995 /* CredentialsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C030A08822BC29E8005B6995 /* CredentialsViewController.swift */; };
+		C030A08C22BC7547005B6995 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C030A08B22BC7547005B6995 /* WebKit.framework */; };
+		C030A08E22BC754E005B6995 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C030A08D22BC754E005B6995 /* Security.framework */; };
+		C030A09022BD2AC5005B6995 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C030A08F22BD2AC5005B6995 /* WebViewController.swift */; };
+		C0A20A4622D5247500AC6A81 /* OwlOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A20A4522D5247500AC6A81 /* OwlOptionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +35,19 @@
 		C030A06122BBFF72005B6995 /* UMASS Access.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UMASS Access.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C030A06422BBFF72005B6995 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C030A06622BBFF72005B6995 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C030A06922BBFF72005B6995 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C030A06B22BBFF75005B6995 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C030A06E22BBFF75005B6995 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C030A07022BBFF75005B6995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C030A07522BBFF75005B6995 /* UMASS AccessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UMASS AccessTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C030A07922BBFF75005B6995 /* UMASS_AccessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMASS_AccessTests.swift; sourceTree = "<group>"; };
 		C030A07B22BBFF75005B6995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C030A08422BC185F005B6995 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
+		C030A08622BC18D8005B6995 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		C030A08822BC29E8005B6995 /* CredentialsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialsViewController.swift; sourceTree = "<group>"; };
+		C030A08B22BC7547005B6995 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		C030A08D22BC754E005B6995 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C030A08F22BD2AC5005B6995 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		C0A20A4522D5247500AC6A81 /* OwlOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwlOptionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C030A08E22BC754E005B6995 /* Security.framework in Frameworks */,
+				C030A08C22BC7547005B6995 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +76,7 @@
 				C030A06322BBFF72005B6995 /* UMASS Access */,
 				C030A07822BBFF75005B6995 /* UMASS AccessTests */,
 				C030A06222BBFF72005B6995 /* Products */,
+				C030A08A22BC7547005B6995 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,7 +94,11 @@
 			children = (
 				C030A06422BBFF72005B6995 /* AppDelegate.swift */,
 				C030A06622BBFF72005B6995 /* ViewController.swift */,
-				C030A06822BBFF72005B6995 /* Main.storyboard */,
+				C0A20A4522D5247500AC6A81 /* OwlOptionsViewController.swift */,
+				C030A08822BC29E8005B6995 /* CredentialsViewController.swift */,
+				C030A08422BC185F005B6995 /* LogoutViewController.swift */,
+				C030A08622BC18D8005B6995 /* AddViewController.swift */,
+				C030A08F22BD2AC5005B6995 /* WebViewController.swift */,
 				C030A06B22BBFF75005B6995 /* Assets.xcassets */,
 				C030A06D22BBFF75005B6995 /* LaunchScreen.storyboard */,
 				C030A07022BBFF75005B6995 /* Info.plist */,
@@ -94,6 +113,15 @@
 				C030A07B22BBFF75005B6995 /* Info.plist */,
 			);
 			path = "UMASS AccessTests";
+			sourceTree = "<group>";
+		};
+		C030A08A22BC7547005B6995 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C030A08D22BC754E005B6995 /* Security.framework */,
+				C030A08B22BC7547005B6995 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,7 +207,6 @@
 			files = (
 				C030A06F22BBFF75005B6995 /* LaunchScreen.storyboard in Resources */,
 				C030A06C22BBFF75005B6995 /* Assets.xcassets in Resources */,
-				C030A06A22BBFF72005B6995 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +224,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C030A08922BC29E8005B6995 /* CredentialsViewController.swift in Sources */,
+				C030A09022BD2AC5005B6995 /* WebViewController.swift in Sources */,
+				C0A20A4622D5247500AC6A81 /* OwlOptionsViewController.swift in Sources */,
 				C030A06722BBFF72005B6995 /* ViewController.swift in Sources */,
+				C030A08522BC185F005B6995 /* LogoutViewController.swift in Sources */,
+				C030A08722BC18D8005B6995 /* AddViewController.swift in Sources */,
 				C030A06522BBFF72005B6995 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,14 +253,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C030A06822BBFF72005B6995 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C030A06922BBFF72005B6995 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C030A06D22BBFF75005B6995 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
